@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
+
 namespace PorraGirona
 {
     public partial class Principal : Form
@@ -58,7 +59,12 @@ namespace PorraGirona
         
         private void btnsalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            FormLogin login = new FormLogin();
+            login.Show();
+            
+
+            //Application.Exit();
         }
         private void AbrirFormEnPanel(object formhija)
         {

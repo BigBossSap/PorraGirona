@@ -1,4 +1,4 @@
-﻿extern alias MySqlConnectorAlias;
+﻿//extern alias MySqlConnectorAlias;
 //using MySql.Data.MySqlClient;
 using System;
 using System.Data;
@@ -52,6 +52,15 @@ namespace PorraGirona
             pictureBox1.Image = pictureBox1.InitialImage;
 
             pictureBox1.Refresh();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            FormLogin login = new FormLogin();
+            
+            login.Show();
         }
     }
    
