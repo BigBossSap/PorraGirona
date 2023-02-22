@@ -3,14 +3,14 @@
     partial class Principal
     {
         /// <summary>
-        /// Required designer variable.
+        /// Variable del diseñador requerida.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Clean up any resources being used.
+        /// Limpiar los recursos que se estén utilizando.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">true si los recursos administrados se deben eliminar; false en caso contrario.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,255 +20,211 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Código generado por el Diseñador de Windows Forms
 
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido del método con el editor de código.
         /// </summary>
         private void InitializeComponent()
         {
-            this.statusStrip_BartStatus = new System.Windows.Forms.StatusStrip();
-            this.BarraStatustoolStripStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.label_nom = new System.Windows.Forms.Label();
-            this.label_NIF = new System.Windows.Forms.Label();
-            this.label_Alias = new System.Windows.Forms.Label();
-            this.label_Rol = new System.Windows.Forms.Label();
-            this.label_cognoms = new System.Windows.Forms.Label();
-            this.label_num_soci = new System.Windows.Forms.Label();
-            this.label_Password = new System.Windows.Forms.Label();
-            this.label_data_alta = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.text_nom = new System.Windows.Forms.TextBox();
-            this.text_nif = new System.Windows.Forms.TextBox();
-            this.text_alias = new System.Windows.Forms.TextBox();
-            this.text_cognoms = new System.Windows.Forms.TextBox();
-            this.text_numsoci = new System.Windows.Forms.TextBox();
-            this.text_password = new System.Windows.Forms.TextBox();
-            this.button_afegir_foto = new System.Windows.Forms.Button();
-            this.button_treure_imatge = new System.Windows.Forms.Button();
-            this.statusStrip_BartStatus.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
+            this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.btnRestaurar = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnMaximizar = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.MenuVertical = new System.Windows.Forms.Panel();
+            this.btnsalir = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnproductos = new System.Windows.Forms.Button();
+            this.btninicio = new System.Windows.Forms.PictureBox();
+            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.BarraTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            this.MenuVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btninicio)).BeginInit();
             this.SuspendLayout();
             // 
-            // statusStrip_BartStatus
+            // BarraTitulo
             // 
-            this.statusStrip_BartStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.BarraStatustoolStripStatus});
-            this.statusStrip_BartStatus.Location = new System.Drawing.Point(0, 483);
-            this.statusStrip_BartStatus.Name = "statusStrip_BartStatus";
-            this.statusStrip_BartStatus.Size = new System.Drawing.Size(872, 22);
-            this.statusStrip_BartStatus.TabIndex = 1;
-            this.statusStrip_BartStatus.Text = "statusStrip1";
+            this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BarraTitulo.Controls.Add(this.btnRestaurar);
+            this.BarraTitulo.Controls.Add(this.btnMinimizar);
+            this.BarraTitulo.Controls.Add(this.btnMaximizar);
+            this.BarraTitulo.Controls.Add(this.btnCerrar);
+            this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
+            this.BarraTitulo.Name = "BarraTitulo";
+            this.BarraTitulo.Size = new System.Drawing.Size(1000, 38);
+            this.BarraTitulo.TabIndex = 0;
+            this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
             // 
-            // BarraStatustoolStripStatus
+            // btnRestaurar
             // 
-            this.BarraStatustoolStripStatus.Name = "BarraStatustoolStripStatus";
-            this.BarraStatustoolStripStatus.Size = new System.Drawing.Size(23, 17);
-            this.BarraStatustoolStripStatus.Text = "OK";
+            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
+            this.btnRestaurar.Location = new System.Drawing.Point(921, 6);
+            this.btnRestaurar.Name = "btnRestaurar";
+            this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
+            this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnRestaurar.TabIndex = 3;
+            this.btnRestaurar.TabStop = false;
+            this.btnRestaurar.Visible = false;
+            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
             // 
-            // label_nom
+            // btnMinimizar
             // 
-            this.label_nom.AutoSize = true;
-            this.label_nom.Location = new System.Drawing.Point(222, 172);
-            this.label_nom.Name = "label_nom";
-            this.label_nom.Size = new System.Drawing.Size(32, 13);
-            this.label_nom.TabIndex = 2;
-            this.label_nom.Text = "Nom:";
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.Location = new System.Drawing.Point(880, 6);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 2;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
-            // label_NIF
+            // btnMaximizar
             // 
-            this.label_NIF.AutoSize = true;
-            this.label_NIF.Location = new System.Drawing.Point(222, 207);
-            this.label_NIF.Name = "label_NIF";
-            this.label_NIF.Size = new System.Drawing.Size(30, 13);
-            this.label_NIF.TabIndex = 3;
-            this.label_NIF.Text = "NIF: ";
+            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
+            this.btnMaximizar.Location = new System.Drawing.Point(921, 6);
+            this.btnMaximizar.Name = "btnMaximizar";
+            this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
+            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMaximizar.TabIndex = 1;
+            this.btnMaximizar.TabStop = false;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
-            // label_Alias
+            // btnCerrar
             // 
-            this.label_Alias.AutoSize = true;
-            this.label_Alias.Location = new System.Drawing.Point(219, 241);
-            this.label_Alias.Name = "label_Alias";
-            this.label_Alias.Size = new System.Drawing.Size(35, 13);
-            this.label_Alias.TabIndex = 4;
-            this.label_Alias.Text = "Alias: ";
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(962, 6);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(25, 25);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // label_Rol
+            // MenuVertical
             // 
-            this.label_Rol.AutoSize = true;
-            this.label_Rol.Location = new System.Drawing.Point(225, 278);
-            this.label_Rol.Name = "label_Rol";
-            this.label_Rol.Size = new System.Drawing.Size(29, 13);
-            this.label_Rol.TabIndex = 5;
-            this.label_Rol.Text = "Rol: ";
+            this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.MenuVertical.Controls.Add(this.btnsalir);
+            this.MenuVertical.Controls.Add(this.panel1);
+            this.MenuVertical.Controls.Add(this.btnproductos);
+            this.MenuVertical.Controls.Add(this.btninicio);
+            this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
+            this.MenuVertical.Location = new System.Drawing.Point(0, 38);
+            this.MenuVertical.Name = "MenuVertical";
+            this.MenuVertical.Size = new System.Drawing.Size(220, 462);
+            this.MenuVertical.TabIndex = 1;
             // 
-            // label_cognoms
+            // btnsalir
             // 
-            this.label_cognoms.AutoSize = true;
-            this.label_cognoms.Location = new System.Drawing.Point(538, 174);
-            this.label_cognoms.Name = "label_cognoms";
-            this.label_cognoms.Size = new System.Drawing.Size(57, 13);
-            this.label_cognoms.TabIndex = 6;
-            this.label_cognoms.Text = "Cognoms: ";
+            this.btnsalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsalir.Image = ((System.Drawing.Image)(resources.GetObject("btnsalir.Image")));
+            this.btnsalir.Location = new System.Drawing.Point(3, 549);
+            this.btnsalir.Name = "btnsalir";
+            this.btnsalir.Size = new System.Drawing.Size(55, 60);
+            this.btnsalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnsalir.TabIndex = 16;
+            this.btnsalir.TabStop = false;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
-            // label_num_soci
+            // panel1
             // 
-            this.label_num_soci.AutoSize = true;
-            this.label_num_soci.Location = new System.Drawing.Point(538, 212);
-            this.label_num_soci.Name = "label_num_soci";
-            this.label_num_soci.Size = new System.Drawing.Size(62, 13);
-            this.label_num_soci.TabIndex = 7;
-            this.label_num_soci.Text = "Num. Soci: ";
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel1.Location = new System.Drawing.Point(0, 134);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(5, 40);
+            this.panel1.TabIndex = 2;
             // 
-            // label_Password
+            // btnproductos
             // 
-            this.label_Password.AutoSize = true;
-            this.label_Password.Location = new System.Drawing.Point(538, 244);
-            this.label_Password.Name = "label_Password";
-            this.label_Password.Size = new System.Drawing.Size(59, 13);
-            this.label_Password.TabIndex = 8;
-            this.label_Password.Text = "Password: ";
+            this.btnproductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnproductos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnproductos.FlatAppearance.BorderSize = 0;
+            this.btnproductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnproductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnproductos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnproductos.ForeColor = System.Drawing.Color.White;
+            this.btnproductos.Image = ((System.Drawing.Image)(resources.GetObject("btnproductos.Image")));
+            this.btnproductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnproductos.Location = new System.Drawing.Point(3, 134);
+            this.btnproductos.Name = "btnproductos";
+            this.btnproductos.Size = new System.Drawing.Size(217, 40);
+            this.btnproductos.TabIndex = 1;
+            this.btnproductos.Text = "Dades";
+            this.btnproductos.UseVisualStyleBackColor = false;
+            this.btnproductos.Click += new System.EventHandler(this.btnproductos_Click);
             // 
-            // label_data_alta
+            // btninicio
             // 
-            this.label_data_alta.AutoSize = true;
-            this.label_data_alta.Location = new System.Drawing.Point(538, 278);
-            this.label_data_alta.Name = "label_data_alta";
-            this.label_data_alta.Size = new System.Drawing.Size(64, 13);
-            this.label_data_alta.TabIndex = 9;
-            this.label_data_alta.Text = "Data d\'alta: ";
+            this.btninicio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btninicio.Image = ((System.Drawing.Image)(resources.GetObject("btninicio.Image")));
+            this.btninicio.Location = new System.Drawing.Point(0, 0);
+            this.btninicio.Name = "btninicio";
+            this.btninicio.Size = new System.Drawing.Size(220, 102);
+            this.btninicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btninicio.TabIndex = 0;
+            this.btninicio.TabStop = false;
             // 
-            // pictureBox1
+            // panelContenedor
             // 
-            this.pictureBox1.ErrorImage = global::PorraGirona.Properties.Resources.account_box_outline_custom__5_;
-            this.pictureBox1.Image = global::PorraGirona.Properties.Resources.account_box_outline_custom__5_;
-            this.pictureBox1.InitialImage = global::PorraGirona.Properties.Resources.account_box_outline_custom__5_;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 131);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 160);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(220, 38);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(780, 462);
+            this.panelContenedor.TabIndex = 2;
             // 
-            // text_nom
-            // 
-            this.text_nom.Location = new System.Drawing.Point(275, 165);
-            this.text_nom.Name = "text_nom";
-            this.text_nom.Size = new System.Drawing.Size(100, 20);
-            this.text_nom.TabIndex = 11;
-            // 
-            // text_nif
-            // 
-            this.text_nif.Location = new System.Drawing.Point(275, 200);
-            this.text_nif.Name = "text_nif";
-            this.text_nif.Size = new System.Drawing.Size(100, 20);
-            this.text_nif.TabIndex = 12;
-            // 
-            // text_alias
-            // 
-            this.text_alias.Location = new System.Drawing.Point(275, 238);
-            this.text_alias.Name = "text_alias";
-            this.text_alias.Size = new System.Drawing.Size(100, 20);
-            this.text_alias.TabIndex = 13;
-            // 
-            // text_cognoms
-            // 
-            this.text_cognoms.Location = new System.Drawing.Point(613, 167);
-            this.text_cognoms.Name = "text_cognoms";
-            this.text_cognoms.Size = new System.Drawing.Size(100, 20);
-            this.text_cognoms.TabIndex = 14;
-            // 
-            // text_numsoci
-            // 
-            this.text_numsoci.Location = new System.Drawing.Point(613, 205);
-            this.text_numsoci.Name = "text_numsoci";
-            this.text_numsoci.Size = new System.Drawing.Size(100, 20);
-            this.text_numsoci.TabIndex = 15;
-            // 
-            // text_password
-            // 
-            this.text_password.Location = new System.Drawing.Point(613, 241);
-            this.text_password.Name = "text_password";
-            this.text_password.Size = new System.Drawing.Size(100, 20);
-            this.text_password.TabIndex = 16;
-            // 
-            // button_afegir_foto
-            // 
-            this.button_afegir_foto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button_afegir_foto.Location = new System.Drawing.Point(26, 297);
-            this.button_afegir_foto.Name = "button_afegir_foto";
-            this.button_afegir_foto.Size = new System.Drawing.Size(20, 20);
-            this.button_afegir_foto.TabIndex = 17;
-            this.button_afegir_foto.Text = "+";
-            this.button_afegir_foto.UseVisualStyleBackColor = false;
-            this.button_afegir_foto.Click += new System.EventHandler(this.button_afegir_foto_Click);
-            // 
-            // button_treure_imatge
-            // 
-            this.button_treure_imatge.BackColor = System.Drawing.Color.Red;
-            this.button_treure_imatge.Location = new System.Drawing.Point(52, 297);
-            this.button_treure_imatge.Name = "button_treure_imatge";
-            this.button_treure_imatge.Size = new System.Drawing.Size(20, 20);
-            this.button_treure_imatge.TabIndex = 18;
-            this.button_treure_imatge.Text = "-";
-            this.button_treure_imatge.UseVisualStyleBackColor = false;
-            this.button_treure_imatge.Click += new System.EventHandler(this.button_treure_imatge_Click);
-            // 
-            // Principal
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(872, 505);
-            this.Controls.Add(this.button_treure_imatge);
-            this.Controls.Add(this.button_afegir_foto);
-            this.Controls.Add(this.text_password);
-            this.Controls.Add(this.text_numsoci);
-            this.Controls.Add(this.text_cognoms);
-            this.Controls.Add(this.text_alias);
-            this.Controls.Add(this.text_nif);
-            this.Controls.Add(this.text_nom);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label_data_alta);
-            this.Controls.Add(this.label_Password);
-            this.Controls.Add(this.label_num_soci);
-            this.Controls.Add(this.label_cognoms);
-            this.Controls.Add(this.label_Rol);
-            this.Controls.Add(this.label_Alias);
-            this.Controls.Add(this.label_NIF);
-            this.Controls.Add(this.label_nom);
-            this.Controls.Add(this.statusStrip_BartStatus);
-            this.Name = "Principal";
-            this.Text = "Principal";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Principal_FormClosing);
-            this.Load += new System.EventHandler(this.Principal_Load);
-            this.statusStrip_BartStatus.ResumeLayout(false);
-            this.statusStrip_BartStatus.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ClientSize = new System.Drawing.Size(1000, 500);
+            this.Controls.Add(this.panelContenedor);
+            this.Controls.Add(this.MenuVertical);
+            this.Controls.Add(this.BarraTitulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.BarraTitulo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            this.MenuVertical.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btninicio)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.StatusStrip statusStrip_BartStatus;
-        private System.Windows.Forms.ToolStripStatusLabel BarraStatustoolStripStatus;
-        private System.Windows.Forms.Label label_nom;
-        private System.Windows.Forms.Label label_NIF;
-        private System.Windows.Forms.Label label_Alias;
-        private System.Windows.Forms.Label label_Rol;
-        private System.Windows.Forms.Label label_cognoms;
-        private System.Windows.Forms.Label label_num_soci;
-        private System.Windows.Forms.Label label_Password;
-        private System.Windows.Forms.Label label_data_alta;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox text_nom;
-        private System.Windows.Forms.TextBox text_nif;
-        private System.Windows.Forms.TextBox text_alias;
-        private System.Windows.Forms.TextBox text_cognoms;
-        private System.Windows.Forms.TextBox text_numsoci;
-        private System.Windows.Forms.TextBox text_password;
-        private System.Windows.Forms.Button button_afegir_foto;
-        private System.Windows.Forms.Button button_treure_imatge;
+
+        private System.Windows.Forms.Panel BarraTitulo;
+        private System.Windows.Forms.PictureBox btnCerrar;
+        private System.Windows.Forms.Panel MenuVertical;
+        private System.Windows.Forms.Panel panelContenedor;
+        private System.Windows.Forms.PictureBox btnRestaurar;
+        private System.Windows.Forms.PictureBox btnMinimizar;
+        private System.Windows.Forms.PictureBox btnMaximizar;
+        private System.Windows.Forms.Button btnproductos;
+        private System.Windows.Forms.PictureBox btninicio;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox btnsalir;
     }
 }
+
