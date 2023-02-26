@@ -1,11 +1,10 @@
-﻿//extern alias MySqlConnectorAlias;
-//using MySql.Data.MySqlClient;
+﻿extern alias MySqlConnectorAlias;
 using System;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
-
+using MySql.Data.MySqlClient;
 
 namespace PorraGirona
 {
