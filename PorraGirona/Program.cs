@@ -11,9 +11,11 @@ namespace PorraGirona
     {
         // possible fix: update-package -reinstall (Tools, nug packet console)
         /// <summary>
+        /// PM> Uninstall-Package MySql.Data -RemoveDependencies
+        /// PM> Install-Package MySql.Data -Version 8.0.17
         /// Punto de entrada principal para la aplicación.
         /// </summary>
-        [STAThread]
+                [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();

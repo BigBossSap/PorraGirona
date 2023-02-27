@@ -8,11 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using MySql.Data.MySqlClient;
 
 namespace PorraGirona
 {
     public partial class FormLogin : Form
     {
+
+        string connectionString = "Data Source=localhost;Initial " +
+            "Catalog=porragironaprova;" +
+            "User ID=root;" +
+            "Password=";
         public FormLogin()
         {
             InitializeComponent();
@@ -91,7 +97,9 @@ namespace PorraGirona
         }
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            if (txtuser.Text == "admin" && txtpass.Text == "12345")
+            TestDBConnection();
+
+            if (DBExisteixUsuari(txtuser.Text, txtpass.Text))
             {
                 txtuser.Text = "";
                 txtpass.Text = "";
@@ -102,5 +110,62 @@ namespace PorraGirona
             else
                 MessageBox.Show("Usuari o Password incorrecte");
         }
+
+        private void TestDBConnection()
+        {
+            MySqlConnection DBConnection = new MySqlConnection(connectionString);
+            try
+            {
+                DBConnection.Open();
+                MessageBox.Show("DataBase Connection successful");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Can not connect to DataBase");
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                DBConnection.Close();
+            }
+        }
+
+        /// <summary>
+        /// Funció que comprova si existeix un usuaro
+        /// </summary>
+        /// <param name="nom">camp de la base de dades</param>
+        /// <param name="password">password de la base de dades</param>
+        /// <returns>true o false</returns>
+        private Boolean DBExisteixUsuari(String nom, String password)
+        {
+            Boolean existeix = false;
+            MySqlConnection DBConnection = new MySqlConnection(connectionString);
+            try
+            {
+                DBConnection.Open();
+                MySqlCommand sqlcommand = DBConnection.CreateCommand();
+                sqlcommand.CommandText = "SELECT * FROM penyistes WHERE alias=@alias AND password=@password";
+                sqlcommand.Parameters.AddWithValue("@alias", nom);
+                sqlcommand.Parameters.AddWithValue("@password", password);
+                sqlcommand.Prepare(); //Compila la consulta per també evitar SQLInjection
+                var reader = sqlcommand.ExecuteReader();
+                if (reader.Read())
+                {
+                    existeix = true;
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                DBConnection.Close();
+            }
+            return (existeix);
+        }
+
+
     }
 }
