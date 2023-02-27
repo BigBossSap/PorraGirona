@@ -172,7 +172,7 @@
             // btninicio
             // 
             this.btninicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btninicio.Image = ((System.Drawing.Image)(resources.GetObject("btninicio.Image")));
+            this.btninicio.Image = global::PorraGirona.Properties.Resources.logo;
             this.btninicio.Location = new System.Drawing.Point(0, 0);
             this.btninicio.Name = "btninicio";
             this.btninicio.Size = new System.Drawing.Size(220, 102);

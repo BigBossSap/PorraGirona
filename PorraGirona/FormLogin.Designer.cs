@@ -49,7 +49,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.panel1.BackColor = System.Drawing.Color.Maroon;
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -60,10 +60,10 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(59, 118);
+            this.pictureBox3.Image = global::PorraGirona.Properties.Resources.logo;
+            this.pictureBox3.Location = new System.Drawing.Point(31, 38);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(114, 90);
+            this.pictureBox3.Size = new System.Drawing.Size(188, 250);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
@@ -133,9 +133,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(503, 0);
+            this.label1.Location = new System.Drawing.Point(460, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 32);
+            this.label1.Size = new System.Drawing.Size(100, 32);
             this.label1.TabIndex = 4;
             this.label1.Text = "LOGIN";
             // 
@@ -234,9 +234,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.LinkLabel linkpass;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox btncerrar;
         private System.Windows.Forms.PictureBox btnminimizar;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

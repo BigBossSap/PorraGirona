@@ -254,6 +254,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\user.png" />
+    <None Include="Resources\logo.png" />
     <None Include="Resources\account-box-outline-custom %285%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

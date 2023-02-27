@@ -16,7 +16,7 @@ namespace PorraGirona
     {
 
         string connectionString = "Data Source=localhost;Initial " +
-            "Catalog=porragironaprova;" +
+            "Catalog=porragirona;" +
             "User ID=root;" +
             "Password=";
         public FormLogin()
@@ -144,7 +144,9 @@ namespace PorraGirona
             {
                 DBConnection.Open();
                 MySqlCommand sqlcommand = DBConnection.CreateCommand();
-                sqlcommand.CommandText = "SELECT * FROM penyistes WHERE alias=@alias AND password=@password";
+                sqlcommand.CommandText = "SELECT * FROM penyistes " +
+                    "WHERE alias=@alias " +
+                    "AND password=@password";
                 sqlcommand.Parameters.AddWithValue("@alias", nom);
                 sqlcommand.Parameters.AddWithValue("@password", password);
                 sqlcommand.Prepare(); //Compila la consulta per també evitar SQLInjection
