@@ -19,6 +19,15 @@ namespace PorraGirona
         public FormPenyistesEntity()
         {
             InitializeComponent();
+            context = new PostDbContext();
         }
+
+
+        private void FormPenyistesEntity_Load(object sender, EventArgs e)
+        {
+            penyistesBindingSource2.DataSource = context.Penyistes.ToList();
     }
+    }
+
+   
 }

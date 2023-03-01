@@ -71,9 +71,9 @@ namespace PorraGirona
             this.imatgeDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.idpenyaNavigationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.porresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.penyistesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.penyistesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.penyistesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.penyistesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.penyistesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             aliasLabel = new System.Windows.Forms.Label();
             cognomsLabel = new System.Windows.Forms.Label();
             dataaltaLabel = new System.Windows.Forms.Label();
@@ -85,9 +85,9 @@ namespace PorraGirona
             this.penyistesBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imatgePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.penystesGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // penyistesBindingNavigator
@@ -439,17 +439,17 @@ namespace PorraGirona
             this.porresDataGridViewTextBoxColumn.HeaderText = "Porres";
             this.porresDataGridViewTextBoxColumn.Name = "porresDataGridViewTextBoxColumn";
             // 
-            // penyistesBindingSource1
+            // penyistesBindingSource2
             // 
-            this.penyistesBindingSource1.DataSource = typeof(PorraGirona.DataLayer.Penyistes);
+            this.penyistesBindingSource2.DataSource = typeof(PorraGirona.DataLayer.Penyistes);
             // 
             // penyistesBindingSource
             // 
             this.penyistesBindingSource.DataSource = typeof(PorraGirona.DataLayer.Penyistes);
             // 
-            // penyistesBindingSource2
+            // penyistesBindingSource1
             // 
-            this.penyistesBindingSource2.DataSource = typeof(PorraGirona.DataLayer.Penyistes);
+            this.penyistesBindingSource1.DataSource = typeof(PorraGirona.DataLayer.Penyistes);
             // 
             // FormPenyistesEntity
             // 
@@ -475,14 +475,15 @@ namespace PorraGirona
             this.Controls.Add(this.penyistesBindingNavigator);
             this.Name = "FormPenyistesEntity";
             this.Text = "FormPenyistesEntity";
+            this.Load += new System.EventHandler(this.FormPenyistesEntity_Load);
             ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingNavigator)).EndInit();
             this.penyistesBindingNavigator.ResumeLayout(false);
             this.penyistesBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imatgePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.penystesGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
