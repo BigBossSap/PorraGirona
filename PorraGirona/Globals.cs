@@ -8,7 +8,8 @@ namespace PorraGirona
 {
     class Globals
     {
-        public static readonly String connectionString = "Data Source=localhost;Initial Catalog=porragirona;User ID=root;Password=";
+        public static readonly String connectionString = "Data Source=localhost;Initial " +
+            "Catalog=porragirona;User ID=root;Password=";
 
     }
 }

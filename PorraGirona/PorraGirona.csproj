@@ -46,6 +46,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
@@ -189,6 +192,20 @@
     <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataLayer\Equips.cs" />
+    <Compile Include="DataLayer\Jugadors.cs" />
+    <Compile Include="DataLayer\Partits.cs" />
+    <Compile Include="DataLayer\Penyes.cs" />
+    <Compile Include="DataLayer\Penyistes.cs" />
+    <Compile Include="DataLayer\Porres.cs" />
+    <Compile Include="DataLayer\PostDbContext.cs" />
+    <Compile Include="DataLayer\Puntuacions.cs" />
+    <Compile Include="FormPenyistesEntity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPenyistesEntity.Designer.cs">
+      <DependentUpon>FormPenyistesEntity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Globals.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
@@ -210,6 +227,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormPenyistesEntity.resx">
+      <DependentUpon>FormPenyistesEntity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,6 +255,14 @@
     <None Include="porragironaDataSet.xss">
       <DependentUpon>porragironaDataSet.xsd</DependentUpon>
     </None>
+    <None Include="Properties\DataSources\PorraGirona.DataLayer.Equips.datasource" />
+    <None Include="Properties\DataSources\PorraGirona.DataLayer.Jugadors.datasource" />
+    <None Include="Properties\DataSources\PorraGirona.DataLayer.Partits.datasource" />
+    <None Include="Properties\DataSources\PorraGirona.DataLayer.Penyes.datasource" />
+    <None Include="Properties\DataSources\PorraGirona.DataLayer.Penyistes.datasource" />
+    <None Include="Properties\DataSources\PorraGirona.DataLayer.Porres.datasource" />
+    <None Include="Properties\DataSources\PorraGirona.DataLayer.PostDbContext.datasource" />
+    <None Include="Properties\DataSources\PorraGirona.DataLayer.Puntuacions.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -261,7 +289,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.EntityFrameworkCore.Design.3.1.22\build\net461\Microsoft.EntityFrameworkCore.Design.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.EntityFrameworkCore.Design.3.1.22\build\net461\Microsoft.EntityFrameworkCore.Design.props'))" />
   </Target>

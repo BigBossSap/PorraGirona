@@ -49,15 +49,18 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button_afegir = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.statusStrip_BartStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip_BartStatus
             // 
             this.statusStrip_BartStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.BarraStatustoolStripStatus});
-            this.statusStrip_BartStatus.Location = new System.Drawing.Point(0, 440);
+            this.statusStrip_BartStatus.Location = new System.Drawing.Point(0, 513);
             this.statusStrip_BartStatus.Name = "statusStrip_BartStatus";
             this.statusStrip_BartStatus.Size = new System.Drawing.Size(780, 22);
             this.statusStrip_BartStatus.TabIndex = 1;
@@ -241,12 +244,32 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
+            // button_afegir
+            // 
+            this.button_afegir.Location = new System.Drawing.Point(491, 234);
+            this.button_afegir.Name = "button_afegir";
+            this.button_afegir.Size = new System.Drawing.Size(75, 23);
+            this.button_afegir.TabIndex = 21;
+            this.button_afegir.Text = "Afegir";
+            this.button_afegir.UseVisualStyleBackColor = true;
+            this.button_afegir.Click += new System.EventHandler(this.button_afegir_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 263);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(763, 201);
+            this.dataGridView1.TabIndex = 22;
+            // 
             // FormPenyistes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(780, 462);
+            this.ClientSize = new System.Drawing.Size(780, 535);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.button_afegir);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button_treure_imatge);
@@ -270,11 +293,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPenyistes";
             this.Text = "Principal";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Principal_FormClosing);
-            this.Load += new System.EventHandler(this.Principal_Load);
+            this.Load += new System.EventHandler(this.FormPenyistes_Load);
             this.statusStrip_BartStatus.ResumeLayout(false);
             this.statusStrip_BartStatus.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,5 +325,7 @@
         private System.Windows.Forms.Button button_treure_imatge;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button button_afegir;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

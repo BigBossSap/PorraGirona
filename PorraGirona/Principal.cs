@@ -83,5 +83,10 @@ namespace PorraGirona
         {
             AbrirFormEnPanel(new FormPenyistes());
         }
+
+        private void b_entity_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FormPenyistesEntity());
+        }
     }
 }
