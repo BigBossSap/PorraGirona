@@ -10,6 +10,12 @@ namespace PorraGirona
 {
     public partial class FormPenyistes : Form
     {
+        String connectionString = Globals.connectionString;
+        MySqlConnection DBConnection;
+        MySqlDataAdapter adapter;
+        DataTable table;
+
+
         
         public FormPenyistes()
         {
@@ -18,11 +24,11 @@ namespace PorraGirona
 
         private void Principal_Load(object sender, EventArgs e)
         {
-            
+            ConnectarBD();
         }
         private void Principal_FormClosing(object sender, FormClosingEventArgs e)
         {
-           
+            DesconnectarBD();
         }
 
         private void button_afegir_foto_Click(object sender, EventArgs e)
@@ -60,6 +66,33 @@ namespace PorraGirona
             FormLogin login = new FormLogin();
             
             login.Show();
+        }
+
+        private Boolean ConnectarBD()
+        {
+            Boolean result = false;
+            DBConnection = new MySqlConnection(connectionString);
+
+            try
+            {
+                DBConnection.Open();
+                result = true;
+
+            }
+
+            catch (Exception ex)
+            {
+                statusStrip_BartStatus.Text = "No es pot connectar a la base de dades";
+                MessageBox.Show(statusStrip_BartStatus.Text);
+            }
+
+            return (result);
+
+        }
+
+        private void DesconnectarBD()
+        {
+            DBConnection.Close();
         }
     }
    

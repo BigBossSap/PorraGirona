@@ -168,6 +168,8 @@ namespace PorraGirona
             return (existeix);
         }
 
+      
+
 
     }
 }
