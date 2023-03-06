@@ -31,27 +31,28 @@ namespace PorraGirona
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label aliasLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPenyistesEntity));
             System.Windows.Forms.Label cognomsLabel;
             System.Windows.Forms.Label dataaltaLabel;
             System.Windows.Forms.Label nifLabel;
             System.Windows.Forms.Label numsociLabel;
             System.Windows.Forms.Label passwordLabel;
             System.Windows.Forms.Label rolLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPenyistesEntity));
+            System.Windows.Forms.Label nomLabel;
             this.penyistesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.aliasTextBox = new System.Windows.Forms.TextBox();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.penyistesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.aliasTextBox = new System.Windows.Forms.TextBox();
             this.cognomsTextBox = new System.Windows.Forms.TextBox();
             this.dataaltaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.nifTextBox = new System.Windows.Forms.TextBox();
@@ -60,6 +61,13 @@ namespace PorraGirona
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.rolComboBox = new System.Windows.Forms.ComboBox();
             this.penystesGridView = new System.Windows.Forms.DataGridView();
+            this.b_nou = new System.Windows.Forms.Button();
+            this.b_afegir = new System.Windows.Forms.Button();
+            this.nomTextBox = new System.Windows.Forms.TextBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.b_esborrar = new System.Windows.Forms.Button();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.penyistesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cognomsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nifDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,9 +79,6 @@ namespace PorraGirona
             this.imatgeDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.idpenyaNavigationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.porresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.penyistesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.penyistesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.penyistesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             aliasLabel = new System.Windows.Forms.Label();
             cognomsLabel = new System.Windows.Forms.Label();
             dataaltaLabel = new System.Windows.Forms.Label();
@@ -81,14 +86,77 @@ namespace PorraGirona
             numsociLabel = new System.Windows.Forms.Label();
             passwordLabel = new System.Windows.Forms.Label();
             rolLabel = new System.Windows.Forms.Label();
+            nomLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingNavigator)).BeginInit();
             this.penyistesBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imatgePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.penystesGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingSource2)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingSource1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // aliasLabel
+            // 
+            aliasLabel.AutoSize = true;
+            aliasLabel.Location = new System.Drawing.Point(507, 156);
+            aliasLabel.Name = "aliasLabel";
+            aliasLabel.Size = new System.Drawing.Size(32, 13);
+            aliasLabel.TabIndex = 1;
+            aliasLabel.Text = "Alias:";
+            // 
+            // cognomsLabel
+            // 
+            cognomsLabel.AutoSize = true;
+            cognomsLabel.Location = new System.Drawing.Point(504, 62);
+            cognomsLabel.Name = "cognomsLabel";
+            cognomsLabel.Size = new System.Drawing.Size(54, 13);
+            cognomsLabel.TabIndex = 3;
+            cognomsLabel.Text = "Cognoms:";
+            // 
+            // dataaltaLabel
+            // 
+            dataaltaLabel.AutoSize = true;
+            dataaltaLabel.Location = new System.Drawing.Point(499, 204);
+            dataaltaLabel.Name = "dataaltaLabel";
+            dataaltaLabel.Size = new System.Drawing.Size(50, 13);
+            dataaltaLabel.TabIndex = 5;
+            dataaltaLabel.Text = "Dataalta:";
+            // 
+            // nifLabel
+            // 
+            nifLabel.AutoSize = true;
+            nifLabel.Location = new System.Drawing.Point(289, 109);
+            nifLabel.Name = "nifLabel";
+            nifLabel.Size = new System.Drawing.Size(23, 13);
+            nifLabel.TabIndex = 7;
+            nifLabel.Text = "Nif:";
+            // 
+            // numsociLabel
+            // 
+            numsociLabel.AutoSize = true;
+            numsociLabel.Location = new System.Drawing.Point(261, 149);
+            numsociLabel.Name = "numsociLabel";
+            numsociLabel.Size = new System.Drawing.Size(51, 13);
+            numsociLabel.TabIndex = 9;
+            numsociLabel.Text = "Numsoci:";
+            // 
+            // passwordLabel
+            // 
+            passwordLabel.AutoSize = true;
+            passwordLabel.Location = new System.Drawing.Point(502, 109);
+            passwordLabel.Name = "passwordLabel";
+            passwordLabel.Size = new System.Drawing.Size(56, 13);
+            passwordLabel.TabIndex = 12;
+            passwordLabel.Text = "Password:";
+            // 
+            // rolLabel
+            // 
+            rolLabel.AutoSize = true;
+            rolLabel.Location = new System.Drawing.Point(265, 199);
+            rolLabel.Name = "rolLabel";
+            rolLabel.Size = new System.Drawing.Size(26, 13);
+            rolLabel.TabIndex = 14;
+            rolLabel.Text = "Rol:";
             // 
             // penyistesBindingNavigator
             // 
@@ -120,55 +188,6 @@ namespace PorraGirona
             this.penyistesBindingNavigator.TabIndex = 0;
             this.penyistesBindingNavigator.Text = "bindingNavigator1";
             // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Posición";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // aliasLabel
-            // 
-            aliasLabel.AutoSize = true;
-            aliasLabel.Location = new System.Drawing.Point(280, 66);
-            aliasLabel.Name = "aliasLabel";
-            aliasLabel.Size = new System.Drawing.Size(32, 13);
-            aliasLabel.TabIndex = 1;
-            aliasLabel.Text = "Alias:";
-            // 
-            // aliasTextBox
-            // 
-            this.aliasTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.penyistesBindingSource, "Alias", true));
-            this.aliasTextBox.Location = new System.Drawing.Point(318, 59);
-            this.aliasTextBox.Name = "aliasTextBox";
-            this.aliasTextBox.Size = new System.Drawing.Size(100, 20);
-            this.aliasTextBox.TabIndex = 2;
-            // 
             // bindingNavigatorAddNewItem
             // 
             this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -177,6 +196,13 @@ namespace PorraGirona
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
             // 
             // bindingNavigatorDeleteItem
             // 
@@ -205,6 +231,26 @@ namespace PorraGirona
             this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
             // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Posición";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
             // bindingNavigatorMoveNextItem
             // 
             this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -223,6 +269,11 @@ namespace PorraGirona
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Mover último";
             // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
             // penyistesBindingNavigatorSaveItem
             // 
             this.penyistesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -232,14 +283,13 @@ namespace PorraGirona
             this.penyistesBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.penyistesBindingNavigatorSaveItem.Text = "Guardar datos";
             // 
-            // cognomsLabel
+            // aliasTextBox
             // 
-            cognomsLabel.AutoSize = true;
-            cognomsLabel.Location = new System.Drawing.Point(504, 62);
-            cognomsLabel.Name = "cognomsLabel";
-            cognomsLabel.Size = new System.Drawing.Size(54, 13);
-            cognomsLabel.TabIndex = 3;
-            cognomsLabel.Text = "Cognoms:";
+            this.aliasTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.penyistesBindingSource, "Alias", true));
+            this.aliasTextBox.Location = new System.Drawing.Point(545, 149);
+            this.aliasTextBox.Name = "aliasTextBox";
+            this.aliasTextBox.Size = new System.Drawing.Size(100, 20);
+            this.aliasTextBox.TabIndex = 2;
             // 
             // cognomsTextBox
             // 
@@ -249,31 +299,15 @@ namespace PorraGirona
             this.cognomsTextBox.Size = new System.Drawing.Size(100, 20);
             this.cognomsTextBox.TabIndex = 4;
             // 
-            // dataaltaLabel
-            // 
-            dataaltaLabel.AutoSize = true;
-            dataaltaLabel.Location = new System.Drawing.Point(499, 204);
-            dataaltaLabel.Name = "dataaltaLabel";
-            dataaltaLabel.Size = new System.Drawing.Size(50, 13);
-            dataaltaLabel.TabIndex = 5;
-            dataaltaLabel.Text = "Dataalta:";
-            // 
             // dataaltaDateTimePicker
             // 
+            this.dataaltaDateTimePicker.CustomFormat = "dd/MM/yyyy HH:mm";
             this.dataaltaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.penyistesBindingSource, "Dataalta", true));
+            this.dataaltaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dataaltaDateTimePicker.Location = new System.Drawing.Point(555, 198);
             this.dataaltaDateTimePicker.Name = "dataaltaDateTimePicker";
             this.dataaltaDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.dataaltaDateTimePicker.TabIndex = 6;
-            // 
-            // nifLabel
-            // 
-            nifLabel.AutoSize = true;
-            nifLabel.Location = new System.Drawing.Point(289, 109);
-            nifLabel.Name = "nifLabel";
-            nifLabel.Size = new System.Drawing.Size(23, 13);
-            nifLabel.TabIndex = 7;
-            nifLabel.Text = "Nif:";
             // 
             // nifTextBox
             // 
@@ -282,15 +316,6 @@ namespace PorraGirona
             this.nifTextBox.Name = "nifTextBox";
             this.nifTextBox.Size = new System.Drawing.Size(100, 20);
             this.nifTextBox.TabIndex = 8;
-            // 
-            // numsociLabel
-            // 
-            numsociLabel.AutoSize = true;
-            numsociLabel.Location = new System.Drawing.Point(261, 149);
-            numsociLabel.Name = "numsociLabel";
-            numsociLabel.Size = new System.Drawing.Size(51, 13);
-            numsociLabel.TabIndex = 9;
-            numsociLabel.Text = "Numsoci:";
             // 
             // numsociTextBox
             // 
@@ -302,38 +327,23 @@ namespace PorraGirona
             // 
             // imatgePictureBox
             // 
+            this.imatgePictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.imatgePictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.penyistesBindingSource, "Imatge", true));
             this.imatgePictureBox.Location = new System.Drawing.Point(63, 62);
             this.imatgePictureBox.Name = "imatgePictureBox";
             this.imatgePictureBox.Size = new System.Drawing.Size(100, 100);
+            this.imatgePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imatgePictureBox.TabIndex = 12;
             this.imatgePictureBox.TabStop = false;
-            // 
-            // passwordLabel
-            // 
-            passwordLabel.AutoSize = true;
-            passwordLabel.Location = new System.Drawing.Point(502, 109);
-            passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new System.Drawing.Size(56, 13);
-            passwordLabel.TabIndex = 12;
-            passwordLabel.Text = "Password:";
             // 
             // passwordTextBox
             // 
             this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.penyistesBindingSource, "Password", true));
             this.passwordTextBox.Location = new System.Drawing.Point(564, 106);
             this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(100, 20);
             this.passwordTextBox.TabIndex = 13;
-            // 
-            // rolLabel
-            // 
-            rolLabel.AutoSize = true;
-            rolLabel.Location = new System.Drawing.Point(265, 199);
-            rolLabel.Name = "rolLabel";
-            rolLabel.Size = new System.Drawing.Size(26, 13);
-            rolLabel.TabIndex = 14;
-            rolLabel.Text = "Rol:";
             // 
             // rolComboBox
             // 
@@ -367,11 +377,78 @@ namespace PorraGirona
             this.imatgeDataGridViewImageColumn,
             this.idpenyaNavigationDataGridViewTextBoxColumn,
             this.porresDataGridViewTextBoxColumn});
-            this.penystesGridView.DataSource = this.penyistesBindingSource2;
+            this.penystesGridView.DataSource = this.penyistesBindingSource;
             this.penystesGridView.Location = new System.Drawing.Point(26, 249);
             this.penystesGridView.Name = "penystesGridView";
-            this.penystesGridView.Size = new System.Drawing.Size(558, 189);
+            this.penystesGridView.Size = new System.Drawing.Size(591, 189);
             this.penystesGridView.TabIndex = 16;
+            // 
+            // b_nou
+            // 
+            this.b_nou.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.b_nou.Location = new System.Drawing.Point(623, 268);
+            this.b_nou.Name = "b_nou";
+            this.b_nou.Size = new System.Drawing.Size(75, 23);
+            this.b_nou.TabIndex = 17;
+            this.b_nou.Text = "Nou";
+            this.b_nou.UseVisualStyleBackColor = true;
+            this.b_nou.Click += new System.EventHandler(this.b_nou_Click);
+            // 
+            // b_afegir
+            // 
+            this.b_afegir.Location = new System.Drawing.Point(623, 327);
+            this.b_afegir.Name = "b_afegir";
+            this.b_afegir.Size = new System.Drawing.Size(75, 23);
+            this.b_afegir.TabIndex = 18;
+            this.b_afegir.Text = "Afegir";
+            this.b_afegir.UseVisualStyleBackColor = true;
+            this.b_afegir.Click += new System.EventHandler(this.b_afegir_Click);
+            // 
+            // nomLabel
+            // 
+            nomLabel.AutoSize = true;
+            nomLabel.Location = new System.Drawing.Point(280, 58);
+            nomLabel.Name = "nomLabel";
+            nomLabel.Size = new System.Drawing.Size(32, 13);
+            nomLabel.TabIndex = 19;
+            nomLabel.Text = "Nom:";
+            // 
+            // nomTextBox
+            // 
+            this.nomTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.penyistesBindingSource, "Nom", true));
+            this.nomTextBox.Location = new System.Drawing.Point(318, 55);
+            this.nomTextBox.Name = "nomTextBox";
+            this.nomTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nomTextBox.TabIndex = 20;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 436);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(880, 22);
+            this.statusStrip1.TabIndex = 21;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // b_esborrar
+            // 
+            this.b_esborrar.Location = new System.Drawing.Point(623, 375);
+            this.b_esborrar.Name = "b_esborrar";
+            this.b_esborrar.Size = new System.Drawing.Size(75, 23);
+            this.b_esborrar.TabIndex = 22;
+            this.b_esborrar.Text = "Esborrar";
+            this.b_esborrar.UseVisualStyleBackColor = true;
+            this.b_esborrar.Click += new System.EventHandler(this.b_esborrar_Click);
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
+            // 
+            // penyistesBindingSource
+            // 
+            this.penyistesBindingSource.DataSource = typeof(PorraGirona.DataLayer.Penyistes);
             // 
             // nomDataGridViewTextBoxColumn
             // 
@@ -439,23 +516,18 @@ namespace PorraGirona
             this.porresDataGridViewTextBoxColumn.HeaderText = "Porres";
             this.porresDataGridViewTextBoxColumn.Name = "porresDataGridViewTextBoxColumn";
             // 
-            // penyistesBindingSource2
-            // 
-            this.penyistesBindingSource2.DataSource = typeof(PorraGirona.DataLayer.Penyistes);
-            // 
-            // penyistesBindingSource
-            // 
-            this.penyistesBindingSource.DataSource = typeof(PorraGirona.DataLayer.Penyistes);
-            // 
-            // penyistesBindingSource1
-            // 
-            this.penyistesBindingSource1.DataSource = typeof(PorraGirona.DataLayer.Penyistes);
-            // 
             // FormPenyistesEntity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 450);
+            this.BackColor = System.Drawing.Color.Tomato;
+            this.ClientSize = new System.Drawing.Size(880, 458);
+            this.Controls.Add(this.b_esborrar);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(nomLabel);
+            this.Controls.Add(this.nomTextBox);
+            this.Controls.Add(this.b_afegir);
+            this.Controls.Add(this.b_nou);
             this.Controls.Add(this.penystesGridView);
             this.Controls.Add(rolLabel);
             this.Controls.Add(this.rolComboBox);
@@ -473,6 +545,8 @@ namespace PorraGirona
             this.Controls.Add(aliasLabel);
             this.Controls.Add(this.aliasTextBox);
             this.Controls.Add(this.penyistesBindingNavigator);
+            this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPenyistesEntity";
             this.Text = "FormPenyistesEntity";
             this.Load += new System.EventHandler(this.FormPenyistesEntity_Load);
@@ -481,9 +555,9 @@ namespace PorraGirona
             this.penyistesBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imatgePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.penystesGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingSource2)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.penyistesBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -525,7 +599,11 @@ namespace PorraGirona
         private System.Windows.Forms.DataGridViewImageColumn imatgeDataGridViewImageColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idpenyaNavigationDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn porresDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource penyistesBindingSource1;
-        private System.Windows.Forms.BindingSource penyistesBindingSource2;
+        private System.Windows.Forms.Button b_nou;
+        private System.Windows.Forms.Button b_afegir;
+        private System.Windows.Forms.TextBox nomTextBox;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.Button b_esborrar;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }

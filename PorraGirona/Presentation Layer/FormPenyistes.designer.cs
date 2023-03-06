@@ -51,6 +51,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_afegir = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.statusStrip_BartStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -69,8 +70,7 @@
             // BarraStatustoolStripStatus
             // 
             this.BarraStatustoolStripStatus.Name = "BarraStatustoolStripStatus";
-            this.BarraStatustoolStripStatus.Size = new System.Drawing.Size(23, 17);
-            this.BarraStatustoolStripStatus.Text = "OK";
+            this.BarraStatustoolStripStatus.Size = new System.Drawing.Size(0, 17);
             // 
             // label_nom
             // 
@@ -266,7 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.Color.Tomato;
             this.ClientSize = new System.Drawing.Size(780, 535);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button_afegir);
@@ -327,5 +327,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button button_afegir;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

@@ -192,6 +192,7 @@
     <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bussines Layer\GestioEntitats.cs" />
     <Compile Include="DataLayer\Equips.cs" />
     <Compile Include="DataLayer\Jugadors.cs" />
     <Compile Include="DataLayer\Partits.cs" />
@@ -200,43 +201,43 @@
     <Compile Include="DataLayer\Porres.cs" />
     <Compile Include="DataLayer\PostDbContext.cs" />
     <Compile Include="DataLayer\Puntuacions.cs" />
-    <Compile Include="FormPenyistesEntity.cs">
+    <Compile Include="Presentation Layer\FormPenyistesEntity.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPenyistesEntity.Designer.cs">
+    <Compile Include="Presentation Layer\FormPenyistesEntity.Designer.cs">
       <DependentUpon>FormPenyistesEntity.cs</DependentUpon>
     </Compile>
     <Compile Include="Globals.cs" />
-    <Compile Include="Principal.cs">
+    <Compile Include="Presentation Layer\Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Principal.designer.cs">
+    <Compile Include="Presentation Layer\Principal.designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLogin.cs">
+    <Compile Include="Presentation Layer\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLogin.designer.cs">
+    <Compile Include="Presentation Layer\FormLogin.designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPenyistes.cs">
+    <Compile Include="Presentation Layer\FormPenyistes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPenyistes.designer.cs">
+    <Compile Include="Presentation Layer\FormPenyistes.designer.cs">
       <DependentUpon>FormPenyistes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormPenyistesEntity.resx">
+    <EmbeddedResource Include="Presentation Layer\FormPenyistesEntity.resx">
       <DependentUpon>FormPenyistesEntity.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Principal.resx">
+    <EmbeddedResource Include="Presentation Layer\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLogin.resx">
+    <EmbeddedResource Include="Presentation Layer\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPenyistes.resx">
+    <EmbeddedResource Include="Presentation Layer\FormPenyistes.resx">
       <DependentUpon>FormPenyistes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

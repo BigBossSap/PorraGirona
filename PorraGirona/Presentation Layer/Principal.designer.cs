@@ -35,12 +35,12 @@
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.b_entity = new System.Windows.Forms.Button();
             this.btnsalir = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnproductos = new System.Windows.Forms.Button();
             this.btninicio = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.b_entity = new System.Windows.Forms.Button();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -53,7 +53,7 @@
             // 
             // BarraTitulo
             // 
-            this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.BarraTitulo.Controls.Add(this.btnRestaurar);
             this.BarraTitulo.Controls.Add(this.btnMinimizar);
             this.BarraTitulo.Controls.Add(this.btnMaximizar);
@@ -120,7 +120,7 @@
             // 
             // MenuVertical
             // 
-            this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.MenuVertical.BackColor = System.Drawing.Color.Maroon;
             this.MenuVertical.Controls.Add(this.b_entity);
             this.MenuVertical.Controls.Add(this.btnsalir);
             this.MenuVertical.Controls.Add(this.panel1);
@@ -131,6 +131,25 @@
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(220, 462);
             this.MenuVertical.TabIndex = 1;
+            // 
+            // b_entity
+            // 
+            this.b_entity.BackColor = System.Drawing.Color.Maroon;
+            this.b_entity.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_entity.FlatAppearance.BorderSize = 0;
+            this.b_entity.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.b_entity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_entity.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_entity.ForeColor = System.Drawing.Color.White;
+            this.b_entity.Image = ((System.Drawing.Image)(resources.GetObject("b_entity.Image")));
+            this.b_entity.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.b_entity.Location = new System.Drawing.Point(22, 171);
+            this.b_entity.Name = "b_entity";
+            this.b_entity.Size = new System.Drawing.Size(217, 40);
+            this.b_entity.TabIndex = 17;
+            this.b_entity.Text = "Afegir Entity";
+            this.b_entity.UseVisualStyleBackColor = false;
+            this.b_entity.Click += new System.EventHandler(this.b_entity_Click);
             // 
             // btnsalir
             // 
@@ -154,7 +173,7 @@
             // 
             // btnproductos
             // 
-            this.btnproductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnproductos.BackColor = System.Drawing.Color.Maroon;
             this.btnproductos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnproductos.FlatAppearance.BorderSize = 0;
             this.btnproductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
@@ -190,25 +209,6 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(780, 462);
             this.panelContenedor.TabIndex = 2;
-            // 
-            // b_entity
-            // 
-            this.b_entity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.b_entity.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.b_entity.FlatAppearance.BorderSize = 0;
-            this.b_entity.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.b_entity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_entity.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_entity.ForeColor = System.Drawing.Color.White;
-            this.b_entity.Image = ((System.Drawing.Image)(resources.GetObject("b_entity.Image")));
-            this.b_entity.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_entity.Location = new System.Drawing.Point(22, 171);
-            this.b_entity.Name = "b_entity";
-            this.b_entity.Size = new System.Drawing.Size(217, 40);
-            this.b_entity.TabIndex = 17;
-            this.b_entity.Text = "Afegir Entity";
-            this.b_entity.UseVisualStyleBackColor = false;
-            this.b_entity.Click += new System.EventHandler(this.b_entity_Click);
             // 
             // Principal
             // 
