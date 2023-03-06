@@ -13,28 +13,17 @@ namespace PorraGirona.Bussines_Layer
     {
         String connectionString = Globals.connectionString;
         PostDbContext context;
-
-
-
-
         public GestioEntitats()
         {
             context = new PostDbContext();
         }
-
-
         public List<Penyistes> LlegirPenyistes()
         {
-
             return (context.Penyistes.OrderBy(p => p.Nom).ToList());
-
         }
-
         public Boolean InserirPenyista(Penyistes penyista)
         {
-
             Boolean result = false;
-
             try
             {
                 List<Penyistes> llista_penysites_trobats;
@@ -43,7 +32,6 @@ namespace PorraGirona.Bussines_Layer
                 {
                     context.Penyistes.Add(penyista);
                     result = (context.SaveChanges() > 0);
-
                 }
 
 
@@ -53,7 +41,35 @@ namespace PorraGirona.Bussines_Layer
                 result = false;
             }
             return true;
+
+
+
+            
         }
+
+        public Boolean EsborrarPenyista(Penyistes penyista)
+        {
+            Boolean result = false;
+            if(penyista != null)
+            {
+                try
+                {
+
+                    context.Penyistes.Remove(penyista);
+                    result = (context.SaveChanges() > 0);
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex);
+                    result = false;
+                }
+
+            }
+
+            return result;
+
+        }
+
     }
 
     
