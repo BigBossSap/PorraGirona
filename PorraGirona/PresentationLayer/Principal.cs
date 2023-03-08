@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
 
-namespace PorraGirona
+namespace PorraGirona.PresentationLayer
 {
     public partial class Principal : Form
     {

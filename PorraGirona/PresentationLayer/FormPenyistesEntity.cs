@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PorraGirona.Bussines_Layer;
 
-namespace PorraGirona
+namespace PorraGirona.PresentationLayer
 {
     public partial class FormPenyistesEntity : Form
     {

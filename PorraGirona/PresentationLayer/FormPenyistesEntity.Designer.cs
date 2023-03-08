@@ -1,5 +1,5 @@
 ﻿
-namespace PorraGirona
+namespace PorraGirona.PresentationLayer
 {
     partial class FormPenyistesEntity
     {

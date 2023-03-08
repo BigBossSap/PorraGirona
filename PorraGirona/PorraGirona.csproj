@@ -201,6 +201,7 @@
     <Compile Include="DataLayer\Porres.cs" />
     <Compile Include="DataLayer\PostDbContext.cs" />
     <Compile Include="DataLayer\Puntuacions.cs" />
+    <Compile Include="PresentationLayer\Class1.cs" />
     <Compile Include="PresentationLayer\FormPenyistesEntity.cs">
       <SubType>Form</SubType>
     </Compile>

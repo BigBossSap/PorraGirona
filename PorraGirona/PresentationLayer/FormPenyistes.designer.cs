@@ -1,4 +1,4 @@
-﻿namespace PorraGirona
+﻿namespace PorraGirona.PresentationLayer
 {
     partial class FormPenyistes
     {

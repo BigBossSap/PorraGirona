@@ -20,7 +20,7 @@ namespace PorraGirona
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run(new PresentationLayer.FormLogin());
             //Application.Run(new Principal());
         }
 

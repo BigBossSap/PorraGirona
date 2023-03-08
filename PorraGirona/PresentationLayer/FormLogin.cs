@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using MySql.Data.MySqlClient;
 
-namespace PorraGirona
+namespace PorraGirona.PresentationLayer
 {
     public partial class FormLogin : Form
     {
