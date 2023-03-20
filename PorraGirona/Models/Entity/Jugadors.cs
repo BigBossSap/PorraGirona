@@ -5,15 +5,15 @@ using System.Collections.Generic;
 // If you have enabled NRTs for your project, then un-comment the following line:
 // #nullable disable
 
-namespace PorraGirona.DataLayer
+namespace PorraGirona.Models.Entity
 {
-    public partial class Puntuacions
+    public partial class Jugadors
     {
-        public int Idpuntuacio { get; set; }
-        public int Idpenyista { get; set; }
-        public string Alias { get; set; }
-        public int? Puntuacio { get; set; }
+        public int Idjugador { get; set; }
+        public string Nom { get; set; }
+        public int? Idequip { get; set; }
         public string Temporada { get; set; }
+
+        public virtual Equips IdequipNavigation { get; set; }
     }
 }
-

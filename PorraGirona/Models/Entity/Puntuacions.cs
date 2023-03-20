@@ -5,7 +5,7 @@ using System.Collections.Generic;
 // If you have enabled NRTs for your project, then un-comment the following line:
 // #nullable disable
 
-namespace PorraGirona.DataLayer
+namespace PorraGirona.Models.Entity
 {
     public partial class Puntuacions
     {
@@ -16,4 +16,3 @@ namespace PorraGirona.DataLayer
         public string Temporada { get; set; }
     }
 }
-
