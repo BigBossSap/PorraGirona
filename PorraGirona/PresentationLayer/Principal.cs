@@ -88,5 +88,10 @@ namespace PorraGirona.PresentationLayer
         {
             AbrirFormEnPanel(new FormPenyistesEntity());
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FormCalculPunts());
+        }
     }
 }

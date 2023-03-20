@@ -42,8 +42,7 @@ namespace PorraGirona.PresentationLayer
         }
         private void FormPenyistes_Load(object sender, EventArgs e)
         {
-            if (ConnectarBD())
-                MessageBox.Show("Connectado");
+            if (ConnectarBD())               
             LoadDataOnDataGridview();
         }
         private void FormPenyistes_FormClosing(object sender, FormClosingEventArgs e)

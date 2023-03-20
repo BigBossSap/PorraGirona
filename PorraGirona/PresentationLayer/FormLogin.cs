@@ -116,8 +116,8 @@ namespace PorraGirona.PresentationLayer
             MySqlConnection DBConnection = new MySqlConnection(connectionString);
             try
             {
-                DBConnection.Open();
-                MessageBox.Show("DataBase Connection successful");
+                DBConnection.Open(); 
+                MessageBox.Show($"Benvingut  {txtuser.Text}!");
             }
             catch (Exception ex)
             {
