@@ -24,7 +24,14 @@ namespace PorraGirona.Bussines_Layer
 
         public List<Puntuacions> LlegirPuntuacions()
         {
-            return (context.Puntuacions.OrderBy(m => m.Puntuacio).ToList());
+            var llista_puntuacions = context.Puntuacions.ToList();
+            foreach(var puntuacio in llista_puntuacions)
+            {
+
+                context.Entry(puntuacio).Reload();
+            }
+
+            return (context.Puntuacions.OrderByDescending(m => m.Puntuacio).ToList());
         }
         public Boolean InserirPenyista(Penyistes penyista)
         {
@@ -105,7 +112,7 @@ namespace PorraGirona.Bussines_Layer
                     for (int j =0; j<llistatPorres.Count(); j++)
                     {
 
-                        porra = llistatPorres[i];
+                        porra = llistatPorres[j];
                         llista_partits = context.Partits.Where(partit_aux => partit_aux.Idpartit == porra.Idpartit
                          && partit_aux.Finalitzat.Equals("SI")).ToList<Partits>();
 
@@ -170,6 +177,9 @@ namespace PorraGirona.Bussines_Layer
 
             if (porra.Golslocal == partit.Golslocal && porra.Golsvisitant == partit.Golsvisitant)
                 punts = 5;
+
+            else if (porra.Golslocal == partit.Golslocal +1 || porra.Golsvisitant == partit.Golsvisitant +1 )
+                punts = 2;
 
             else if (porra.Golslocal == partit.Golslocal && porra.Golsvisitant != partit.Golsvisitant)
                 punts = 4;

@@ -38,7 +38,10 @@ namespace PorraGirona.PresentationLayer
             
             gestioEntitats.CalcularPuntuacioEntity();
             toolStripStatusLabel1.Text = "Punts recalculats";
+            LoadDataOnDataGridView();
 
         }
+
+        
     }
 }

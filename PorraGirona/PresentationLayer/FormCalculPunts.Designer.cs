@@ -30,58 +30,17 @@ namespace PorraGirona.PresentationLayer
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idpuntuacioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idpenyistaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.puntuacioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.temporadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.puntuacionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bt_prova = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.puntuacionsDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.puntuacionsBindingSource)).BeginInit();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.puntuacionsDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idpuntuacioDataGridViewTextBoxColumn,
-            this.idpenyistaDataGridViewTextBoxColumn,
-            this.puntuacioDataGridViewTextBoxColumn,
-            this.temporadaDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.puntuacionsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(410, 63);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(352, 474);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // idpuntuacioDataGridViewTextBoxColumn
-            // 
-            this.idpuntuacioDataGridViewTextBoxColumn.DataPropertyName = "Idpuntuacio";
-            this.idpuntuacioDataGridViewTextBoxColumn.HeaderText = "Idpuntuacio";
-            this.idpuntuacioDataGridViewTextBoxColumn.Name = "idpuntuacioDataGridViewTextBoxColumn";
-            // 
-            // idpenyistaDataGridViewTextBoxColumn
-            // 
-            this.idpenyistaDataGridViewTextBoxColumn.DataPropertyName = "Idpenyista";
-            this.idpenyistaDataGridViewTextBoxColumn.HeaderText = "Idpenyista";
-            this.idpenyistaDataGridViewTextBoxColumn.Name = "idpenyistaDataGridViewTextBoxColumn";
-            // 
-            // puntuacioDataGridViewTextBoxColumn
-            // 
-            this.puntuacioDataGridViewTextBoxColumn.DataPropertyName = "Puntuacio";
-            this.puntuacioDataGridViewTextBoxColumn.HeaderText = "Puntuacio";
-            this.puntuacioDataGridViewTextBoxColumn.Name = "puntuacioDataGridViewTextBoxColumn";
-            // 
-            // temporadaDataGridViewTextBoxColumn
-            // 
-            this.temporadaDataGridViewTextBoxColumn.DataPropertyName = "Temporada";
-            this.temporadaDataGridViewTextBoxColumn.HeaderText = "Temporada";
-            this.temporadaDataGridViewTextBoxColumn.Name = "temporadaDataGridViewTextBoxColumn";
             // 
             // puntuacionsBindingSource
             // 
@@ -101,9 +60,9 @@ namespace PorraGirona.PresentationLayer
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 462);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(896, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -112,37 +71,62 @@ namespace PorraGirona.PresentationLayer
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
+            // puntuacionsDataGridView
+            // 
+            this.puntuacionsDataGridView.AllowUserToAddRows = false;
+            this.puntuacionsDataGridView.AllowUserToDeleteRows = false;
+            this.puntuacionsDataGridView.AutoGenerateColumns = false;
+            this.puntuacionsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.puntuacionsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.puntuacionsDataGridView.DataSource = this.puntuacionsBindingSource;
+            this.puntuacionsDataGridView.Location = new System.Drawing.Point(389, 151);
+            this.puntuacionsDataGridView.Name = "puntuacionsDataGridView";
+            this.puntuacionsDataGridView.Size = new System.Drawing.Size(245, 268);
+            this.puntuacionsDataGridView.TabIndex = 2;
+           
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Alias";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Alias";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Puntuacio";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Puntuacio";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
             // FormCalculPunts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(896, 484);
+            this.Controls.Add(this.puntuacionsDataGridView);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.bt_prova);
-            this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCalculPunts";
             this.Text = "FormCalculPunts";
             this.Load += new System.EventHandler(this.FormPuntuacions_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.puntuacionsBindingSource)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.puntuacionsDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idpuntuacioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idpenyistaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn puntuacioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn temporadaDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource puntuacionsBindingSource;
         private System.Windows.Forms.Button bt_prova;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.DataGridView puntuacionsDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }
