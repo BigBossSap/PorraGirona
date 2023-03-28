@@ -605,5 +605,7 @@ namespace PorraGirona.PresentationLayer
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.Button b_esborrar;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.PictureBox imatgeEquip;
+        
     }
 }

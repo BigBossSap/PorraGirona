@@ -208,6 +208,12 @@
     <Compile Include="PresentationLayer\FormCalculPunts.Designer.cs">
       <DependentUpon>FormCalculPunts.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\FormEquips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\FormEquips.Designer.cs">
+      <DependentUpon>FormEquips.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\FormPenyistesEntity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,11 +244,15 @@
     <EmbeddedResource Include="PresentationLayer\FormCalculPunts.resx">
       <DependentUpon>FormCalculPunts.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\FormEquips.resx">
+      <DependentUpon>FormEquips.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\FormPenyistesEntity.resx">
       <DependentUpon>FormPenyistesEntity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

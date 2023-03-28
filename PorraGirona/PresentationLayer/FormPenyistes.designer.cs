@@ -243,6 +243,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
+           
             // 
             // button_afegir
             // 
